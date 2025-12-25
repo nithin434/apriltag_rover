@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# Environments
+.venv/
+venv/
+.env
+.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# ROS2 / colcon
+build/
+install/
+log/
+.colcon/
+
+# Generated media / recordings
+*.db3
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.bag
+*.bag.active
+*.sqlite3
+recordings/
+recording_*/
+camera_mission_*/
+video_recording_*/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Backups
+*~
+*.swp

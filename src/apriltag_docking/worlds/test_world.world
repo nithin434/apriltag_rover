@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="simple_docking_world">
+    
+    <!-- Physics -->
+    <physics type="ode">
+      <real_time_update_rate>1000.0</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+    </physics>
+
+    <!-- Lighting -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Ground -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Simple AprilTag 1 - Black square on white background -->
+    <model name="tag_1">
+      <static>true</static>
+      <pose>3 0 0.1 0 0 0</pose>
+      <link name="link">
+        <!-- White background -->
+        <visual name="white_bg">
+          <geometry>
+            <box><size>0.4 0.4 0.001</size></box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <!-- Black center -->
+        <visual name="black_center">
+          <pose>0 0 0.001 0 0 0</pose>
+          <geometry>
+            <box><size>0.3 0.3 0.001</size></box>
+          </geometry>
+          <material>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0 0 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Simple AprilTag 2 - Further away -->
+    <model name="tag_2">
+      <static>true</static>
+      <pose>6 0 0.1 0 0 0</pose>
+      <link name="link">
+        <visual name="white_bg">
+          <geometry>
+            <box><size>0.4 0.4 0.001</size></box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <visual name="black_center">
+          <pose>0 0 0.001 0 0 0</pose>
+          <geometry>
+            <box><size>0.3 0.3 0.001</size></box>
+          </geometry>
+          <material>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0 0 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>
