@@ -33,9 +33,9 @@ log/
 *.avi
 *.bag
 *.bag.active
-*.sqlite3
-recordings/
-recording_*/
+# *.sqlite3
+# recordings/
+# recording_*/
 camera_mission_*/
 video_recording_*/
 
