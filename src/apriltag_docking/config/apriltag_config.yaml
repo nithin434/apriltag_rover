@@ -1,0 +1,17 @@
+mission_controller:
+  ros__parameters:
+    # Tag following and camera features
+    enable_tag_following: true      # Set to false to use timeout-based navigation
+    enable_background_camera: false # Set to true to enable background camera
+    
+    # Mission timing (seconds)
+    mission_start_delay: 3.0        # Delay before mission starts
+    lift_up_duration: 3.0           # Time to lift rack up
+    lift_down_duration: 3.0         # Time to lower rack down
+    tag_timeout: 30.0               # Timeout if tag not reached
+    
+    # Mission tag sequences
+    # Each sequence represents the order of AprilTags to follow for that docking station
+    dock1_tags: [1, 2]              # Tags for Docking Station 1
+    dock2_tags: [3, 4]              # Tags for Docking Station 2
+    charger_tags: [5, 0]            # Tags for Charging Station
