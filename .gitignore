@@ -26,7 +26,7 @@ log/
 .colcon/
 
 # Generated media / recordings
-*.db3
+# *.db3
 *.mp4
 *.mkv
 *.mov
